@@ -1,6 +1,7 @@
 package com.linemessageapi.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 public class TestController {
 
     @RequestMapping("/test")
-    public List<String> test(String aa){
+    public List<String> test(@RequestParam("aa")String aa){
 
         List<String> strings = new ArrayList<>();
 
